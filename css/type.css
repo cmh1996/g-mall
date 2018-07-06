@@ -1,0 +1,47 @@
+.search-box{
+	width: 100%;
+	height: 2.2rem;
+	background-color: #e7e7e9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-box .search-input{
+	width: 94%;
+	height: 70%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	color:#a0a0a0;
+	font-size: 0.6rem;
+	border-radius: 0.6rem;
+}
+.search-box .search-input i{
+	margin-left: 0.3rem;
+	margin-right: 0.5rem;
+	font-size: 0.7rem;
+}
+.type-banner{
+	width: 100%;
+	height: 6rem;
+}
+.type-list{
+	background-color: white;
+	width: 100%;
+	height: 18rem;
+	padding:0.2rem 0.6rem 0;
+}
+.type-list li{
+	width: 100%;
+	height: 2.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.6rem;
+}
+.type-list li .type-name{
+	font-size: 0.7rem;
+}
+.type-list li .type-num{
+	color: #58635b;
+}

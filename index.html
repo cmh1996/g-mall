@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530334428355&di=b54bebaedb6b6a2c9cdbd1fd34ca861b&imgtype=0&src=http%3A%2F%2Fimga.mumayi.com%2Fandroid%2Fimg_mumayi%2F2015%2F03%2F21%2F94%2F940770%2Ficon%2F940770_0589f.png" type="image/x-icon"/>
+    <title>绿茵商城</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/type.css">
+    <link rel="stylesheet" type="text/css" href="./css/goods.css">
+    <link rel="stylesheet" type="text/css" href="./css/cart.css">
+    <link rel="stylesheet" type="text/css" href="./css/detail.css">
+    <script type="text/javascript" src="./js/rem.js"></script>
+  </head>
+  <body>
+    <div class="outer-wrapper">
+      <div class="page" id="indexPage" style="display: block;">
+        <img class="banner" src="./img/banner1.jpg">
+        <section class="type-box">
+          <div class="type-box-header">热门推荐</div>
+          <ul class="type-box-content hot-box"></ul>
+        </section>
+        <section class="type-box">
+          <div class="type-box-header">球衣专区</div>
+          <ul class="type-box-content shift-box"></ul>
+        </section>
+        <section class="type-box">
+          <div class="type-box-header">球鞋专区</div>
+          <ul class="type-box-content shoes-box"></ul>
+        </section>
+        <section class="type-box">
+          <div class="type-box-header">足球专区</div>
+          <ul class="type-box-content football-box"></ul>
+        </section>
+        <section class="type-box">
+          <div class="type-box-header">周边配件</div>
+          <ul class="type-box-content parts-box"></ul>
+        </section>
+      </div>
+      <div class="page" id="typePage" style="display: none;">
+        <div class="search-box">
+          <div class="search-input">
+            <i class="iconfont icon-sousuo"></i>
+            大家都在搜：克罗地亚
+          </div>
+        </div>
+        <img class="type-banner" src="./img/banner2.jpg">
+        <ul class="type-list">
+          <li>
+            <span class="type-name">球衣</span>
+            <span class="type-num">商品数目：3</span>
+          </li>
+          <li>
+            <span class="type-name">球鞋</span>
+            <span class="type-num">商品数目：3</span>
+          </li>
+          <li>
+            <span class="type-name">足球</span>
+            <span class="type-num">商品数目：3</span>
+          </li>
+          <li>
+            <span class="type-name">周边配件</span>
+            <span class="type-num">商品数目：3</span>
+          </li>
+        </ul>
+      </div>
+      <div class="page" id="goodsPage" style="display: none;">
+        <div class="search-box">
+          <div class="search-input">
+            <i class="iconfont icon-sousuo"></i>
+            大家都在搜：2018世界杯
+          </div>
+        </div>
+        <div class="goods-box">
+          <ul class="goods-type-list">
+            <li class="type-item selected" data-type="hot">热门</li>
+            <li class="type-item" data-type="shift">球衣</li>
+            <li class="type-item" data-type="shoes">球鞋</li>
+            <li class="type-item" data-type="football">足球</li>
+            <li class="type-item" data-type="parts">配件</li>
+          </ul>
+          <ul class="goods-item-list"></ul>
+        </div>
+      </div>
+      <div class="page" id="cartPage" style="display: none;">
+        <div class="cart-header">
+          <div class="cart-select-all-btn">
+            <i class="iconfont icon-zhengque"></i>
+          </div>
+          <span class="cart-select-all-text">全选</span>
+        </div>
+        <ul class="cart-goods-list"></ul>
+        <div class="cart-footer">
+          <div class="cart-select-all-btn">
+            <i class="iconfont icon-zhengque"></i>
+          </div>
+          <span class="cart-select-all-text">全选</span>
+          <div class="cart-amount">
+            <p class="cart-amount-top">共计<span class="cart-amount-money">￥0</span></p>
+            <p class="cart-amount-bottom">共0件</p>
+          </div>
+          <div class="cart-confirm-btn">
+            去结算
+          </div>
+        </div>
+      </div>
+      <div class="page" id="detailPage" style="display: none;">
+        <div class="bar-header">
+          <i class="iconfont icon-xiangzuojiantou backBtn"></i>
+          <span>商品详情</span>
+        </div>
+        <div class="detail-content"></div>
+        <div class="detail-bottom">
+          <div class="order">
+            <i class="iconfont icon-wodedingdan"></i>
+            <span>订单</span>
+          </div>
+          <div class="cart">
+            <i class="iconfont icon-gouwuchetianjia"></i>
+            <span>购物车</span>
+            <span id="dot2">0</span>
+          </div>
+          <div class="addBtn">加入购物车</div>
+          <div class="buyBtn">立即购买</div>
+        </div>
+      </div>
+    </div>
+    <ul class="bottom-nav">
+      <li class="bottom-nav-item selected" data-page='indexPage'>
+        <i class="iconfont icon-shouye"></i>
+        <span>首页</span>
+      </li>
+      <li class="bottom-nav-item" data-page='typePage'>
+        <i class="iconfont icon-all"></i>
+        <span>分类</span>
+      </li>
+      <li class="bottom-nav-item" data-page='goodsPage'>
+        <i class="iconfont icon-wodedingdan"></i>
+        <span>商品</span>
+      </li>
+      <li class="bottom-nav-item" data-page='cartPage'>
+        <i class="iconfont icon-gouwuche"></i>
+        <span>购物车</span>
+        <span id="dot1">0</span>
+      </li>
+    </ul>
+    <script type="text/javascript" src="./js/mockData.js"></script>
+    <script type="text/javascript" src="./js/util.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
